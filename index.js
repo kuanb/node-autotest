@@ -15,8 +15,8 @@ app.get('/', function(request, response) {
 
 var counter = 0;
 setInterval(function () {
-	console.log('Yo the current status of the counter is: ' + 0);
-	counter += 1;
+	console.log('Yo the current status of the counter is: ' + counter);
+	counter = counter + 1;
 }, 2000)
 
 app.listen(app.get('port'), function() {
