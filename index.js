@@ -15,9 +15,9 @@ app.get('/', function(request, response) {
 
 var counter = 0;
 setInterval(function () {
-	console.log('Yo the current status of the counter is: ' + counter);
+	console.log('Yo the current status of the counter is: ' + counter + ' at time ' + new Date().toUTCString());
 	counter = counter + 1;
-}, 2000)
+}, 10000)
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
